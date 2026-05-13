@@ -1,0 +1,196 @@
+🚀 Lesson 1 — Introduction to ANN (Artificial Neural Networks)
+
+🔷 1. What is an ANN?
+    📌 An Artificial Neural Network (ANN) is a model inspired by the human brain that learns patterns using layers of connected nodes (neurons).
+    
+    🧠 Simple Intuition
+    
+    Think of it like this: Input → Hidden Layers → Output
+    
+    Example:   Input	    Output
+               Email text	Spam / Not Spam
+               Image     	Cat / Dog
+
+
+🔷 2. Basic Structure of ANN
+
+    An ANN has 3 main parts:
+    
+    🔹 1. Input Layer
+    Takes input features
+    Example: age, salary
+    
+    🔹 2. Hidden Layer(s)
+    Performs calculations
+    Learns patterns
+    
+    🔹 3. Output Layer
+    Gives final prediction
+    
+    🧠 Diagram
+    Input → [Hidden Layer] → Output
+
+🔷 3. What is a Neuron?
+
+    Each neuron does:
+    
+    1. Takes inputs
+    2. Applies weights
+    3. Adds bias
+    4. Passes through activation function
+
+    📌 Formula
+    
+    Then: Output = Activation(z)
+
+🔷 4. Activation Functions
+
+    They decide output of neuron.
+    
+    Common ones:
+    ReLU → most used
+    Sigmoid → binary output
+    Tanh
+    Example (Sigmoid)
+    
+    Output range: 0 to 1
+
+🔷 5. How ANN Learns
+    
+    Steps:
+    
+    1. Forward Propagation → prediction
+    2. Calculate error
+    3. Backpropagation → adjust weights
+    4. Repeat
+
+
+==============================================================
+==============================================================
+
+
+🚀 Lesson 2 — Hidden Layers & Deep Neural Networks
+
+    🔷 1. Why Do We Need Hidden Layers?
+
+        Hidden layers are what make a neural network capable of learning complex patterns instead of just simple relationships.
+        
+        Think of a neural network like this:
+
+        Input layer → receives raw data
+        Hidden layers → learn patterns/features
+        Output layer → gives final prediction
+        
+        Without hidden layers, a neural network behaves almost like simple linear regression.
+        
+        But real-world data is complex:
+        
+        Images
+        Speech
+        Language
+        Fraud detection
+
+        👉 One layer is not enough.
+
+
+    🔷 2. Deep Neural Network (DNN)
+    
+        When ANN has multiple hidden layers:
+        
+        Input → Hidden → Hidden → Output
+        
+        It becomes:
+        
+        👉 Deep Learning
+    
+    🔷 3. What Hidden Layers Actually Do
+    
+        Each layer learns different patterns.
+        
+        Example for image recognition:
+        
+        Layer	Learns
+        Layer 1	Edges
+        Layer 2	Shapes
+        Layer 3	Object parts
+        Output	Final object
+
+    🔷 4. Activation Function — ReLU
+
+        Most used activation in deep learning:
+        
+        👉 ReLU (Rectified Linear Unit)
+        
+        f(x)=max(0,x)
+        
+        Why ReLU?
+        
+        ✔ Fast
+        ✔ Simple
+        ✔ Helps deep networks train better
+    
+    🔷 5. Building a Real ANN
+    
+        We’ll create:
+        
+        Input Layer
+        ↓
+        Hidden Layer 1
+        ↓
+        Hidden Layer 2
+        ↓
+        Output Layer
+
+    🔷 12. Important Deep Learning Terms
+        -------------------------------------------
+        Term	           Meaning
+        -------------------------------------------
+        Neuron	           Processing unit
+        Layer	           Group of neurons
+        Weights	           Learned parameters
+        Bias	           Extra adjustment
+        Activation	       Adds non-linearity
+        Epoch	           One full training cycle
+        -------------------------------------------
+
+    🔷 13. Why Deep Learning Works So Well because deep networks can learn:
+        
+        ✔ Complex relationships
+        ✔ Non-linear patterns
+        ✔ Images and text
+        
+        Traditional ML struggles with these.
+    
+    🔷 14. Common Problems in Deep Learning
+        
+        🔹 Overfitting - Network memorizes data.
+        
+            Fix: Dropout, More data
+
+        🔹 Vanishing Gradient - Gradients become too small.
+        
+            Fix: ReLU, Better initialization
+
+    🔷 15. Visualize Model Structure - model.summary()
+        
+        Shows: Layers, Parameters, Shapes
+
+    🧠 What You Learned
+
+        ✔ Hidden layers
+        ✔ Deep neural networks
+        ✔ ReLU activation
+        ✔ Multi-layer ANN
+        ✔ Real training workflow
+
+    🔥 Practice Task
+
+        Do this:
+        
+        Change neurons:
+            8 → 16
+            4 → 8
+        Change epochs:
+            50
+            200
+        Observe accuracy changes

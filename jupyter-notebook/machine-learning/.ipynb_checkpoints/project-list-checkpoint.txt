@@ -1,0 +1,38 @@
+🚀 Project 1 — Credit Card Fraud Detection:
+
+    (Type: Classification, Imbalanced Data)
+
+    Dataset: Credit Card Fraud Detection Dataset
+
+    🎯 Goal
+
+        Detect whether a transaction is fraud (1) or normal (0)
+
+    🔴 Real Challenge
+
+        Dataset is highly imbalanced:
+        
+        Normal → 99%
+        Fraud → 1%
+
+        👉 Accuracy alone is misleading
+        👉 We focus on precision, recall
+
+🧾 Resume Line
+
+Built a fraud detection model using Random Forest with class balancing and evaluated using precision-recall metrics.
+
+
+🚀 Project 2 — Customer Churn Prediction
+
+    (Type: Classification, Business Use Case)
+    
+    Dataset: Telco Customer Churn Dataset
+    
+    🎯 Goal
+    
+        Predict whether a customer will leave (churn)
+
+🧾 Resume Line
+
+Developed a customer churn prediction model using Random Forest and performed feature engineering on telecom data.
